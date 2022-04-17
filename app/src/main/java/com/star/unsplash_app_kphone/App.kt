@@ -1,0 +1,17 @@
+package com.star.unsplash_app_kphone
+
+import android.app.Application
+
+class App : Application() {
+
+    companion object{
+        lateinit var instance: App
+            private set
+    }
+
+    override fun onCreate() {
+        super.onCreate()
+        instance = this
+    }
+
+}
